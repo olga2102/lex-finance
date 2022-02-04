@@ -1,0 +1,26 @@
+.nav {
+  padding: 5px;
+  background-color: white;
+  border-radius: 5px;
+}
+.nav__list {
+  @include list-reset;
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  border: 1px solid $border-grey;
+  border-radius: 5px;
+}
+
+.nav__item {
+  padding: 20px 3%;
+
+  &:not(:last-child) {
+    border-right: 1px solid $border-grey;
+  }
+}
+
+.nav__link {
+  text-align: center;
+  color: $font-grey;
+}

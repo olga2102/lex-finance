@@ -1,0 +1,21 @@
+.page {
+  scroll-behavior: smooth;
+}
+
+.page__body {
+  font-family: "Open Sans", "Arial", sans-serif;
+  color: $font-grey;
+  font-size: 16px;
+  line-height: 125%;
+  min-width: 320px;
+  min-height: 100vh;
+  align-content: start;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 0;
+
+  &--lock {
+    overflow: hidden;
+  }
+}
