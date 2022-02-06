@@ -1,0 +1,313 @@
+.advantages {
+  position: relative;
+
+  &::after {
+    position: absolute;
+    content: "";
+    right: 0;
+    bottom: 0;
+    // transform: translateX(-50%);
+    width: 113px;
+    height: 172px;
+    background-image: url("../img/coin1.png");
+    background-repeat: no-repeat;
+
+    @media (max-width: $mini-desktop-width) {
+      width: 90px;
+      height: 160px;
+      background-size: contain;
+    }
+
+    @media (max-width: $tablet-width) {
+      bottom: 35%;
+      transform: translateY(50%);
+    }
+
+    @media (max-width: $mini-tablet-width) {
+      bottom: 40%;
+      width: 70px;
+      height: 100px;
+      transform:translateY(0);
+    }
+  }
+}
+
+.advantages__title {
+  font-size: 40px;
+  margin: 0 0 80px;
+  text-align: center;
+
+  @media (max-width: $mini-desktop-width) {
+    font-size: 36px;
+    line-height: 32px;
+  }
+
+  @media (max-width: $tablet-width) {
+    margin: 0 0 60px;
+    font-size: 28px;
+    line-height: 28px;
+  }
+
+  @media (max-width: $mini-tablet-width) {
+    margin: 0 0 50px;
+    font-size: 24px;
+    line-height: 24px;
+  }
+
+  @media (max-width: $mobile-width) {
+    margin: 0 0 30px;
+    font-size: 18px;
+    line-height: 20px;
+  }
+}
+
+.advantages__detail {
+  font-style: italic;
+  color: $orange;
+}
+
+.advantages__list {
+  @include list-reset;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 89%;
+}
+
+.advantages__item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  width: 15%;
+  min-height: 430px;
+
+  &--stickman,
+  &--twenty {
+    padding-bottom: 30px;
+
+    @media (max-width: $tablet-width) {
+      padding-bottom: 0;
+    }
+  }
+
+  @media (max-width: $mini-desktop-width) {
+    width: 20%;
+  }
+
+  @media (max-width: $tablet-width) {
+    width: 40%;
+    min-height: 330px;
+  }
+
+  @media (max-width: $mini-tablet-width) {
+    margin-bottom: 25px;
+    width: 48%;
+    min-height: 280px;
+  }
+
+  @media (max-width: $mobile-width) {
+    margin-bottom: 15px;
+    width: 100%;
+    min-height: 230px;
+  }
+
+  &::before {
+    position: absolute;
+    content: "";
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+    width: 160px;
+    height: 160px;
+    background-repeat: no-repeat;
+
+    @media (max-width: $mini-desktop-width) {
+      width: 140px;
+      height: 140px;
+      background-size: contain;
+    }
+
+    @media (max-width: $mini-tablet-width) {
+      width: 120px;
+      height: 110px;
+    }
+  }
+
+  &--stickman::before {
+    transform:translate(-50%, 0);
+    background-image: url("../img/stickman.jpg");
+
+    @media (max-width: $tablet-width) {
+      transform:translate(-50%, 0);
+    }
+  }
+
+  &--scales::before {
+    transform:translate(-50%, 0);
+    background-image: url("../img/scales.jpg");
+
+    @media (max-width: $tablet-width) {
+      transform:translate(-50%, 0);
+    }
+  }
+
+  &--twenty::before {
+    transform: translate(-50%, -10%);
+    width: 225px;
+    background-image: url("../img/twenty.jpg");
+
+    @media (max-width: $mini-desktop-width) {
+      transform: translate(-50%, 0);
+      width: 180px;
+      height: 160px;
+    }
+
+    @media (max-width: $tablet-width) {
+      transform:translate(-50%, 0);
+    }
+
+    @media (max-width: $mini-tablet-width) {
+      width: 120px;
+      height: 120px;
+    }
+  }
+
+  &--folder::before {
+    transform:translate(-50%, 0);
+    background-image: url("../img/folder.jpg");
+
+    @media (max-width: $mini-desktop-width) {
+      transform:translate(-50%, 0);
+    }
+
+    @media (max-width: $tablet-width) {
+      transform:translate(-50%, 0);
+    }
+  }
+}
+
+.advantages__subtitle {
+  position: relative;
+  margin: 0 0 20px;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 125%;
+  text-align: center;
+
+  // &::before {
+  //   position: absolute;
+  //   content: "";
+  //   left: 50%;
+  //   top: -100%;
+  //   transform: translateX(-50%);
+  //   width: 160px;
+  //   height: 160px;
+  //   background-repeat: no-repeat;
+
+  //   @media (max-width: $mini-desktop-width) {
+  //     width: 140px;
+  //     height: 140px;
+  //     background-size: contain;
+  //   }
+
+  //   @media (max-width: $mini-tablet-width) {
+  //     width: 120px;
+  //     height: 110px;
+  //   }
+  // }
+
+  // &--stickman::before {
+  //   transform:translate(-50%, -56%);
+  //   background-image: url("../img/stickman.jpg");
+
+  //   @media (max-width: $tablet-width) {
+  //     transform:translate(-50%, -85%);
+  //   }
+
+  //   @media (max-width: $mini-tablet-width) {
+  //     transform:translate(-50%, -75%);
+  //   }
+  // }
+
+  // &--scales::before {
+  //   transform:translate(-50%, -56%);
+  //   background-image: url("../img/scales.jpg");
+
+  //   @media (max-width: $tablet-width) {
+  //     transform:translate(-50%, -85%);
+  //   }
+
+  //   @media (max-width: $mini-tablet-width) {
+  //     transform:translate(-50%, -77%);
+  //   }
+  // }
+
+  // &--twenty::before {
+  //   transform: translate(-50%, -50%);
+  //   width: 225px;
+  //   background-image: url("../img/twenty.jpg");
+
+  //   @media (max-width: $mini-desktop-width) {
+  //     width: 180px;
+  //     height: 160px;
+  //   }
+
+  //   @media (max-width: $tablet-width) {
+  //     transform:translate(-50%, -85%);
+  //   }
+
+  //   @media (max-width: $mini-tablet-width) {
+  //     width: 120px;
+  //     height: 120px;
+  //     transform:translate(-50%, -60%);
+  //   }
+  // }
+
+  // &--folder::before {
+  //   transform:translate(-50%, -50%);
+  //   background-image: url("../img/folder.jpg");
+
+  //   @media (max-width: $mini-desktop-width) {
+  //     transform:translate(-50%, -65%);
+  //   }
+
+  //   @media (max-width: $tablet-width) {
+  //     transform:translate(-50%, -85%);
+  //   }
+
+  //   @media (max-width: $mini-tablet-width) {
+  //     transform:translate(-50%, -90%);
+  //   }
+  // }
+
+  @media (max-width: $mini-desktop-width) {
+    font-size: 22px;
+  }
+
+  @media (max-width: $tablet-width) {
+    font-size: 18px;
+  }
+
+  @media (max-width: $mini-tablet-width) {
+    font-size: 16px;
+  }
+
+  @media (max-width: $mobile-width) {
+    margin-bottom: 15px;
+    font-size: 14px;
+  }
+}
+
+.advantages__text {
+  margin: 0 0 20px;
+
+  @media (max-width: $tablet-width) {
+    font-size: 14px;
+  }
+
+  @media (max-width: $mini-tablet-width) {
+    font-size: 12px;
+  }
+}

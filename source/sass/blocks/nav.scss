@@ -2,6 +2,14 @@
   padding: 5px;
   background-color: white;
   border-radius: 5px;
+
+  @media (max-width: $tablet-width) {
+    &--opened {
+      display: block;
+      width: 100%;
+      order: 1;
+    }
+  }
 }
 .nav__list {
   @include list-reset;
@@ -10,17 +18,42 @@
   background-color: white;
   border: 1px solid $border-grey;
   border-radius: 5px;
+
+  @media (max-width: $tablet-width) {
+    flex-direction: column;
+    border: none;
+  }
 }
 
 .nav__item {
-  padding: 20px 3%;
+  padding: 20px 2%;
 
   &:not(:last-child) {
     border-right: 1px solid $border-grey;
+
+    @media (max-width: $tablet-width) {
+      border-right: none;
+    }
+  }
+
+  @media (max-width: $medium-desktop-width) {
+    padding: 20px 1%;
+  }
+
+  @media (max-width: $mini-desktop-width) {
+    padding: 13px 1%;
+  }
+
+  @media (max-width: $tablet-width) {
+    border-bottom: 1px solid $orange;
   }
 }
 
 .nav__link {
   text-align: center;
   color: $font-grey;
+
+  @media (max-width: $mini-desktop-width) {
+    font-size: 14px;
+  }
 }
