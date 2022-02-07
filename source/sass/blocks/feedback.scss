@@ -1,0 +1,83 @@
+.feedback {
+  position: relative;
+  margin: 0 auto;
+  padding-top: 80px;
+  width: 70%;
+}
+
+.feedback__quastion {
+  position: absolute;
+  margin: 0 auto;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 30px;
+  width: 87%;
+  font-family: "playfairDisplay-Regular";
+  font-size: 40px;
+  line-height: 125%;
+  background-color: $light-pink;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.feedback__wrapper {
+  padding: 30px 0;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.feedback__text {
+  font-size: 24px;
+  line-height: 125%;
+  text-align: center;
+}
+
+.feedback__tel {
+  display: block;
+  margin: 0 auto;
+  position: relative;
+  margin-bottom: 40px;
+  padding-bottom: 5px;
+  width: 30%;
+  font-size: 24px;
+  line-height: 125%;
+  color: $orange;
+  border-bottom: 1px dashed $orange;
+  text-align: center;
+
+  &::before {
+    position: absolute;
+    content: "";
+    left: -45px;
+    bottom: 0;
+    width: 30px;
+    height: 30px;
+    background-image: url("../img/tel.svg");
+  }
+}
+
+.feedback__link {
+  display: block;
+  padding: 25px 30px;
+  margin: 0 auto 20px;
+  width: 35%;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 22px;
+  color: white;
+  text-transform: uppercase;
+  text-align: center;
+  background-color: $orange;
+  background: linear-gradient(308.34deg, $orange 0%, $orange 100%);
+  box-shadow: 0px 4px 0px $orange, inset -4px -4px 8px rgba(255, 255, 255, 0.08), inset 3px 3px 8px rgba(255, 255, 255, 0.12);
+  border-radius: 10px;
+}
+
+.feedback__note {
+  margin: 0 auto;
+  width: 37%;
+  font-size: 16px;
+  line-height: 125%;
+  text-align: center;
+}
