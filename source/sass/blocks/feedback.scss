@@ -1,8 +1,28 @@
 .feedback {
-  position: relative;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
   margin: 0 auto;
   padding-top: 80px;
-  width: 70%;
+  width: 52%;
+
+  @media (max-width: $medium-desktop-width) {
+    width: 58%;
+  }
+
+  @media (max-width: $mini-desktop-width) {
+    width: 62%;
+  }
+
+  @media (max-width: $tablet-width) {
+    width: 80%;
+  }
+
+  @media (max-width: $mobile-width) {
+    width: 90%;
+  }
 }
 
 .feedback__quastion {
@@ -10,36 +30,150 @@
   margin: 0 auto;
   top: 0;
   left: 50%;
-  transform: translateX(-50%);
-  padding: 30px;
-  width: 87%;
+  transform: translate(-50%, -20%);
+  padding: 30px 0;
+  width: 83%;
   font-family: "playfairDisplay-Regular";
   font-size: 40px;
-  line-height: 125%;
+  line-height: 90%;
   background-color: $light-pink;
   border-radius: 10px;
   text-align: center;
+
+  @media (max-width: $medium-desktop-width) {
+    padding-bottom: 45px;
+    font-size: 36px;
+  }
+
+  @media (max-width: $mini-desktop-width) {
+    padding: 30px 10px 55px;
+    font-size: 30px;
+  }
+
+  @media (max-width: $tablet-width) {
+    line-height: 32px;
+    font-size: 28px;
+  }
+
+  @media (max-width: $mini-tablet-width) {
+    padding-top: 20px;
+    transform: translate(-50%, -10%);
+    font-size: 20px;
+  }
+
+  @media (max-width: $mobile-width) {
+    line-height: 28px;
+    font-size: 16px;
+  }
 }
 
 .feedback__wrapper {
-  padding: 30px 0;
+  position: relative;
+  padding: 4px;
   background-color: white;
   border-radius: 10px;
+
+  &::before,
+  &::after {
+    position: absolute;
+    content: "";
+    top: 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    @media (max-width: $mobile-width) {
+      display: none;
+    }
+  }
+
+  &::before {
+    left: 0;
+    transform: translate(-40%, -40%);
+    width: 300px;
+    height: 300px;
+    background-image: url("../img/ruble.png");
+
+    @media (max-width: $mini-desktop-width) {
+      width: 260px;
+      height: 260px;
+    }
+
+    @media (max-width: $tablet-width) {
+      width: 175px;
+      height: 175px;
+    }
+
+    @media (max-width: $mini-tablet-width) {
+      width: 115px;
+      height: 115px;
+    }
+  }
+
+  &::after {
+    right: 0;
+    transform: translate(50%, -25%);
+    width: 500px;
+    height: 500px;
+    background-image: url("../img/retro-phone.png");
+
+    @media (max-width: $medium-desktop-width) {
+      transform: translate(50%, -10%);
+      width: 475px;
+      height: 475px;
+    }
+
+    @media (max-width: $mini-desktop-width) {
+      width: 380px;
+      height: 380px;
+    }
+
+    @media (max-width: $tablet-width) {
+      top: 15%;
+      transform: translate(30%, 0);
+      width: 230px;
+      height: 230px;
+    }
+
+    @media (max-width: $mini-tablet-width) {
+      top: 25%;
+      width: 162px;
+      height: 162px;
+    }
+  }
+}
+
+.feedback__inner {
+  display: flex;
+  flex-direction: column;
+  padding: 30px 14%;
+  border: 1px solid $border-grey;
+  border-radius: 15px;
+
+  @media (max-width: $mobile-width) {
+    padding: 20px 7%;
+  }
 }
 
 .feedback__text {
+  margin: 0 0 20px;
   font-size: 24px;
   line-height: 125%;
   text-align: center;
+
+  @media (max-width: $mini-tablet-width) {
+    font-size: 18px;
+  }
+
+  @media (max-width: $mobile-width) {
+    font-size: 14px;
+  }
 }
 
 .feedback__tel {
-  display: block;
   margin: 0 auto;
   position: relative;
   margin-bottom: 40px;
   padding-bottom: 5px;
-  width: 30%;
   font-size: 24px;
   line-height: 125%;
   color: $orange;
@@ -54,14 +188,33 @@
     width: 30px;
     height: 30px;
     background-image: url("../img/tel.svg");
+
+    @media (max-width: $mobile-width) {
+      width: 20px;
+      height: 20px;
+      background-size: cover;
+    }
+  }
+
+  @media (max-width: $mini-desktop-width) {
+    font-size: 22px;
+  }
+
+  @media (max-width: $mini-tablet-width) {
+    font-size: 20px;
+  }
+
+  @media (max-width: $mobile-width) {
+    margin-bottom: 20px;
+    font-size: 14px;
   }
 }
 
 .feedback__link {
   display: block;
-  padding: 25px 30px;
-  margin: 0 auto 20px;
-  width: 35%;
+  padding: 20px 30px;
+  margin: 0 auto 15px;
+  width: 39%;
   font-weight: bold;
   font-size: 14px;
   line-height: 22px;
@@ -72,12 +225,41 @@
   background: linear-gradient(308.34deg, $orange 0%, $orange 100%);
   box-shadow: 0px 4px 0px $orange, inset -4px -4px 8px rgba(255, 255, 255, 0.08), inset 3px 3px 8px rgba(255, 255, 255, 0.12);
   border-radius: 10px;
+
+  @media (max-width: $mini-desktop-width) {
+    width: 45%;
+  }
+
+  @media (max-width: $tablet-width) {
+    width: 50%;
+  }
+
+  @media (max-width: $mini-tablet-width) {
+    padding: 15px;
+    width: 70%;
+    font-size: 12px;
+  }
+
+  @media (max-width: $mobile-width) {
+    padding: 8px;
+    font-size: 10px;
+  }
 }
 
 .feedback__note {
   margin: 0 auto;
-  width: 37%;
+  width: 47%;
   font-size: 16px;
   line-height: 125%;
   text-align: center;
+
+  @media (max-width: $mini-desktop-width) {
+    width: 70%;
+    font-size: 14px;
+  }
+
+  @media (max-width: $mini-tablet-width) {
+    width: 80%;
+    font-size: 12px;
+  }
 }
