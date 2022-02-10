@@ -54,6 +54,7 @@
   },
   "dependencies": {
     "focus-trap": "^6.6.0",
+    "swiper": "^8.0.5",
     "uglify-es": "^3.3.9"
   }
 }

@@ -1,0 +1,23 @@
+.swiper-button {
+  @include button-reset;
+  margin-left: 60px;
+  position: relative;
+  width: 60px;
+  height: 60px;
+
+  &::before {
+    position: absolute;
+    content: "";
+    right: 0;
+    top:  0;
+    width: 60px;
+    height: 60px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url("../img/arrow.svg");
+  }
+
+  &--next::before {
+    transform: rotate(180deg);
+  }
+}

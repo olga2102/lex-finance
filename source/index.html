@@ -11,6 +11,7 @@
   <link rel="stylesheet" type="text/css" href="https://shariki-spb.ru/wp-content/themes/Goodini/assets/css/blocks.css" /> -->
   <link href="fonts/opensans.woff2" as="font" rel="preload" crossorigin="anonymous">
   <link href="fonts/playfairDisplay-Italic.woff2" as="font" rel="preload" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
 </head>
 
 <body class="page__body">
@@ -246,49 +247,56 @@
       </div>
     </section>
     <section class="portfolio">
-      <h2 class="portfolio__title">Портфолио</h2>
-      <p class="portfolio__text">Оцените уровень компетенции нашей команды по сложности решенных для клиентов вопросов</p>
-      <div class=""swiper>
-      <ul class="portfolio__list swiper-wrapper">
-        <li class="portfolio__item swiper-slide">
-          <div class="portfolio__wrapper">
-            <div class="portfolio__inner">
-              <p class="portfolio__topic"><b>Избавили клиента от 160 млн ₽</b> доначисленных налогов</p>
-              <a class="portfolio__link" href="#">Подробнее</a>
-            </div>
+      <div class="container">
+        <h2 class="portfolio__title">Портфолио</h2>
+        <p class="portfolio__text">Оцените уровень компетенции нашей команды по сложности решенных для клиентов вопросов
+        </p>
+        <div class="portfolio__swiper swiper">
+          <ul class="portfolio__list swiper-wrapper">
+            <li class="portfolio__item portfolio__item--spare swiper-slide">
+              <div class="portfolio__wrapper">
+                <div class="portfolio__inner">
+                  <p class="portfolio__topic"><b>Избавили клиента от 160 млн ₽</b> доначисленных налогов</p>
+                  <a class="portfolio__link" href="#">Подробнее</a>
+                </div>
+              </div>
+            </li>
+            <li class="portfolio__item portfolio__item--save swiper-slide">
+              <div class="portfolio__wrapper">
+                <div class="portfolio__inner">
+                  <p class="portfolio__topic"><b>Сэкономили подрядчику 10 млн ₽</b>, урегулировав спор до суда</p>
+                  <a class="portfolio__link" href="#">Подробнее</a>
+                </div>
+              </div>
+            </li>
+            <li class="portfolio__item portfolio__item--exact swiper-slide">
+              <div class="portfolio__wrapper">
+                <div class="portfolio__inner">
+                  <p class="portfolio__topic"><b>Взыскали с банка 10 млн ₽</b> гарантийного депозита</p>
+                  <a class="portfolio__link" href="#">Подробнее</a>
+                </div>
+              </div>
+            </li>
+            <li class="portfolio__item portfolio__item--hide swiper-slide">
+              <div class="portfolio__wrapper">
+                <div class="portfolio__inner">
+                  <p class="portfolio__topic"><b>Один из 4-х собственников ТЦ</b> скрывал доходы от 3-х остальных</p>
+                  <a class="portfolio__link" href="#">Подробнее</a>
+                </div>
+              </div>
+            </li>
+          </ul>
+          <div class="portfolio__box">
+            <button class="portfolio__button swiper-button swiper-button--prev"></button>
+            <button class="portfolio__button swiper-button swiper-button--next"></button>
           </div>
-        </li>
-        <li class="portfolio__item swiper-slide">
-          <div class="portfolio__wrapper">
-            <div class="portfolio__inner">
-              <p class="portfolio__topic"><b>Сэкономили подрядчику 10 млн ₽</b>, урегулировав спор до суда</p>
-              <a class="portfolio__link" href="#">Подробнее</a>
-            </div>
-          </div>
-        </li>
-        <li class="portfolio__item swiper-slide">
-          <div class="portfolio__wrapper">
-            <div class="portfolio__inner">
-              <p class="portfolio__topic"><b>Взыскали с банка 10 млн ₽</b> гарантийного депозита</p>
-              <a class="portfolio__link" href="#">Подробнее</a>
-            </div>
-          </div>
-        </li>
-        <li class="portfolio__item swiper-slide">
-          <div class="portfolio__wrapper">
-            <div class="portfolio__inner">
-              <p class="portfolio__topic"><b>Один из 4-х собственников ТЦ</b> скрывал доходы от 3-х остальных</p>
-              <a class="portfolio__link" href="#">Подробнее</a>
-            </div>
-          </div>
-        </li>
-      </ul>
-      <button class="portfilio__button swiper-button-prev">
-      <button class="portfilio__button swiper-button-next">
-      <a class="portfolio__link-gallery" href="#">смотреть все кейсы</a>
-    </div>
+          <a class="portfolio__link-gallery" href="#">смотреть все кейсы</a>
+        </div>
+      </div>
     </section>
   </main>
+  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+  <script src="js/slider.js" type="module"></script>
   <script src="js/menu.js"></script>
   <!-- <script src="https://shariki-spb.ru/wp-content/themes/Goodini/assets/js/base.min.js"></script>
   <script src="https://shariki-spb.ru/wp-content/themes/Goodini/assets/js/validate.min.js"></script> -->

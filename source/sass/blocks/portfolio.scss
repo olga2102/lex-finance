@@ -1,3 +1,7 @@
+.portfolio {
+  margin-bottom: 35px;
+}
+
 .portfolio__title {
   margin: 0 0 30px;
   font-family: "playfairDisplay-Regular";
@@ -27,7 +31,7 @@
 
 .portfolio__text {
   margin: 0 auto 80px;
-  width: 31%;
+  width: 43%;
   font-size: 24px;
   line-height: 125%;
   text-align: center;
@@ -41,6 +45,113 @@
   }
 }
 
+.portfolio__swiper {
+  width: 87%;
+}
+
 .portfolio__list {
   @include list-reset;
+  padding: 20px 0;
+}
+
+.portfolio__item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 413px;
+
+  &::before {
+    content: "";
+    width: 255px;
+    height: 180px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    box-shadow: 0 -3px 25px 0 rgba(0,0,0,0.2);
+  }
+
+  &--spare::before {
+    background-image: url("../img/spare.jpg");
+  }
+
+  &--save::before  {
+    background-image: url("../img/save.jpg");
+  }
+
+  &--exact::before  {
+    background-image: url("../img/exact.jpg");
+  }
+
+  &--hide::before  {
+    background-image: url("../img/hide.jpg");
+  }
+}
+
+.portfolio__wrapper {
+  position: relative;
+  padding: 5px;
+  border-radius: 15px;
+  box-shadow: 0 3px 25px 0 rgba(0,0,0,0.2);
+
+  &::before {
+    position: absolute;
+    content: "";
+    right: 0;
+    top:  0;
+    transform: translate(40%, -50%);
+    width: 110px;
+    height: 110px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url("../img/medal.svg");
+  }
+}
+
+.portfolio__inner {
+  padding: 30px 10%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 263px;
+  box-sizing: border-box;
+  border: 1px solid $border-grey;
+  border-radius: 15px;
+}
+
+.portfolio__topic {
+  margin: 0;
+  font-size: 24px;
+  line-height: 125%;
+  text-align: center;
+}
+
+.portfolio__link {
+  font-size: 24px;
+  line-height: 125%;
+  color: $orange;
+  border-bottom: 2px dashed $orange;
+}
+
+.portfolio__box {
+  margin: 0 auto 15px;
+  display: flex;
+  justify-content: center;
+}
+
+.portfolio__link-gallery {
+  display: block;
+  margin: 0 auto;
+  width: 24%;
+  padding: 19px 30px;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 22px;
+  text-align: center;
+  text-transform: uppercase;
+  color: white;
+  background-color: $orange;
+  background: linear-gradient(308.34deg, $orange 0%, $orange 100%);
+  box-shadow: 0px 4px 0px $orange, inset -4px -4px 8px rgba(255, 255, 255, 0.08), inset 3px 3px 8px rgba(255, 255, 255, 0.12);
+  border-radius: 10px;
 }
