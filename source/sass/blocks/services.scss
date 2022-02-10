@@ -1,5 +1,6 @@
 .services {
   position: relative;
+  margin-bottom: 100px;
   width: 100%;
   min-height: 2490px;
   background-image: url("../img/phone-services.jpg");
@@ -26,11 +27,22 @@
    bottom: -16px;
   }
 
+  @media (max-width: $mini-desktop-width) {
+    min-height: 2370px;
+  }
+
+  @media (max-width: $tablet-width) {
+    margin-bottom: 70px;
+    font-size: 32px;
+  }
+
   @media (max-width: $mini-tablet-width) {
+    margin-bottom: 30px;
     min-height: 2887px;
   }
 
   @media (max-width: $mobile-width) {
+    margin-bottom: 20px;
     min-height: 4200px;
   }
 }

@@ -9,6 +9,14 @@
   // background: linear-gradient(113.75deg, rgba(68, 60, 49, 0.8) 0%, rgba(64, 49, 68, 0.8) 0.01%, rgba(0, 0, 0, 0.9) 92.21%);
   backdrop-filter: blur(3px);
 
+  @media (max-width: $mini-tablet-width) {
+    min-height: 475px;
+   }
+
+   @media (max-width: $mobile-width) {
+     min-height: 400px;
+   }
+
   &::after {
     position: absolute;
     content: "";
@@ -17,6 +25,8 @@
     width: 100%;
     height: 290px;
     background-image: url("../img/clouds.png");
+    background-repeat: no-repeat;
+    background-size: cover;
 
     @media (max-width: $medium-desktop-width) {
       height: 230px;
@@ -40,21 +50,13 @@
   }
 
   @media (max-width: $tablet-width) {
-    min-height: 600px;
+    min-height: 345px;
 
     &--opened {
-      height: 100vh;
+      min-height: 100vh;
       background-color: white;
       background-image: none
     }
-  }
-
-  @media (max-width: $mini-tablet-width) {
-   min-height: 475px;
-  }
-
-  @media (max-width: $mobile-width) {
-    min-height: 400px;
   }
 }
 
@@ -71,7 +73,7 @@
 
   @media (max-width: $tablet-width) {
     margin-bottom: 35px;
-    justify-content: flex-start;
+    justify-content: flex-end;
   }
 
   @media (max-width: $mini-tablet-width) {
@@ -169,7 +171,7 @@
   }
 
   @media (max-width: $mobile-width) {
-    margin: 0 20px;
+    margin: 0 5px 0 20px;
     width: 42%;
   }
 }

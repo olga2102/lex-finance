@@ -1,51 +1,86 @@
 .logo {
   position: relative;
+  width: 206px;
+  height: 150px;
+  background-image: url("../img/rectangle.svg");
+
+  @media (max-width: $mini-desktop-width) {
+    width: 100px;
+    height: 100px;
+    background-image: none;
+  }
+
+  @media (max-width: $mobile-width) {
+    width: 65px;
+    height: 65px;
+  }
 }
 
 .logo__text {
-  position: absolute;
+  // position: absolute;
   margin: 15px 25px;
-  bottom: 15px;
+  // bottom: 15px;
   font-family: "playfairDisplay-Regular";
   text-align: center;
 
   @media (max-width: $mini-desktop-width) {
-    margin: 5px 16px;
-    bottom: 20px;
-    line-height: 14px;
-    font-size: 10px;
+    display: none;
   }
 
-  @media (max-width: $tablet-width) {
-    bottom: 8px;
-    font-size: 8px;
-  }
+  // @media (max-width: $mini-desktop-width) {
+  //   margin: 5px 16px;
+  //   bottom: 20px;
+  //   line-height: 14px;
+  //   font-size: 10px;
+  // }
 
-  @media (max-width: $mobile-width) {
-    bottom: 17px;
-    font-size: 6px;
-    line-height: 8px;
-  }
+  // @media (max-width: $tablet-width) {
+  //   bottom: 8px;
+  //   font-size: 8px;
+  // }
+
+  // @media (max-width: $mobile-width) {
+  //   bottom: 17px;
+  //   font-size: 6px;
+  //   line-height: 8px;
+  // }
 }
 
 .logo__img {
+  margin-top: 10px;
+  margin-left: 20px;
+
   @media (max-width: $medium-desktop-width) {
-    width: 180px;
-    height: 160px;
-    object-fit: contain;
+    margin-top: 10px;
+    margin-left: 15px;
+    // width: 180px;
+    // height: 160px;
+    // object-fit: contain;
   }
 
   @media (max-width: $mini-desktop-width) {
-    width: 130px;
-    height: 110px;
+    display: none;
   }
 
-  @media (max-width: $mini-tablet-width) {
-    width: 100px;
-    height: 80px;
+  // @media (max-width: $mini-tablet-width) {
+  //   width: 100px;
+  //   height: 80px;
+  // }
+
+  // @media (max-width: $mobile-width) {
+  //   width: 80px;
+  // }
+}
+
+.logo__picture {
+  display: none;
+
+  @media (max-width: $mini-desktop-width) {
+   display: block;
   }
 
   @media (max-width: $mobile-width) {
-    width: 80px;
+    width: 65px;
+    height: 65px;
   }
 }
