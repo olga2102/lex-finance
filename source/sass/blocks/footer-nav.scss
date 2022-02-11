@@ -1,0 +1,10 @@
+.footer-nav {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footer-nav__wrapper {
+  &:not(:last-child) {
+    margin-right: 5%;
+  }
+}

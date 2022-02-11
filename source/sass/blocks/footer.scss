@@ -1,0 +1,52 @@
+.footer__wrapper {
+  padding-bottom: 20px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footer__logo {
+  margin-right: 3%;
+}
+
+.footer__nav {
+  width: 80%;
+}
+
+.footer__link {
+  display: block;
+  text-align: center;
+
+  &--pink {
+    color: $pink;
+  }
+
+  &--orange {
+    color: $orange;
+  }
+}
+
+.footer__inner {
+  position: relative;
+  margin-bottom: 20px;
+
+  &::before {
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: 0;
+    width: 88.5%;
+    height: 1px;
+    background-color: $border-grey;
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    right: 0;
+    bottom: 0;
+    width: 289px;
+    height: 312px;
+    background-image: url("../img/hand.png");
+    background-repeat: no-repeat;
+  }
+}

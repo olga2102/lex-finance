@@ -103,7 +103,6 @@
 }
 
 .services__list {
-  @include list-reset;
   position: relative;
   margin-left: auto;
   display: flex;
@@ -201,11 +200,8 @@
 
 .services__inner {
   position: relative;
-  // margin-bottom: 40px;
   padding: 40px 2%;
-  // width: 100%;
   min-height: 98%;
-  // background-color: white;
   border-radius: 15px;
   border: 1px solid $border-grey;
 

@@ -6,7 +6,6 @@
     content: "";
     right: 0;
     bottom: 0;
-    // transform: translateX(-50%);
     width: 113px;
     height: 172px;
     background-image: url("../img/coin1.png");
@@ -68,7 +67,6 @@
 }
 
 .advantages__list {
-  @include list-reset;
   margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
@@ -196,92 +194,6 @@
   font-size: 24px;
   line-height: 125%;
   text-align: center;
-
-  // &::before {
-  //   position: absolute;
-  //   content: "";
-  //   left: 50%;
-  //   top: -100%;
-  //   transform: translateX(-50%);
-  //   width: 160px;
-  //   height: 160px;
-  //   background-repeat: no-repeat;
-
-  //   @media (max-width: $mini-desktop-width) {
-  //     width: 140px;
-  //     height: 140px;
-  //     background-size: contain;
-  //   }
-
-  //   @media (max-width: $mini-tablet-width) {
-  //     width: 120px;
-  //     height: 110px;
-  //   }
-  // }
-
-  // &--stickman::before {
-  //   transform:translate(-50%, -56%);
-  //   background-image: url("../img/stickman.jpg");
-
-  //   @media (max-width: $tablet-width) {
-  //     transform:translate(-50%, -85%);
-  //   }
-
-  //   @media (max-width: $mini-tablet-width) {
-  //     transform:translate(-50%, -75%);
-  //   }
-  // }
-
-  // &--scales::before {
-  //   transform:translate(-50%, -56%);
-  //   background-image: url("../img/scales.jpg");
-
-  //   @media (max-width: $tablet-width) {
-  //     transform:translate(-50%, -85%);
-  //   }
-
-  //   @media (max-width: $mini-tablet-width) {
-  //     transform:translate(-50%, -77%);
-  //   }
-  // }
-
-  // &--twenty::before {
-  //   transform: translate(-50%, -50%);
-  //   width: 225px;
-  //   background-image: url("../img/twenty.jpg");
-
-  //   @media (max-width: $mini-desktop-width) {
-  //     width: 180px;
-  //     height: 160px;
-  //   }
-
-  //   @media (max-width: $tablet-width) {
-  //     transform:translate(-50%, -85%);
-  //   }
-
-  //   @media (max-width: $mini-tablet-width) {
-  //     width: 120px;
-  //     height: 120px;
-  //     transform:translate(-50%, -60%);
-  //   }
-  // }
-
-  // &--folder::before {
-  //   transform:translate(-50%, -50%);
-  //   background-image: url("../img/folder.jpg");
-
-  //   @media (max-width: $mini-desktop-width) {
-  //     transform:translate(-50%, -65%);
-  //   }
-
-  //   @media (max-width: $tablet-width) {
-  //     transform:translate(-50%, -85%);
-  //   }
-
-  //   @media (max-width: $mini-tablet-width) {
-  //     transform:translate(-50%, -90%);
-  //   }
-  // }
 
   @media (max-width: $mini-desktop-width) {
     font-size: 22px;
