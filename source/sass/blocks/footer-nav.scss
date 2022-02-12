@@ -1,10 +1,22 @@
 .footer-nav {
   display: flex;
   flex-wrap: wrap;
+
+  @media (max-width: $mini-desktop-width) {
+    flex-direction: column;
+    justify-content: center;
+  }
+
 }
 
 .footer-nav__wrapper {
   &:not(:last-child) {
     margin-right: 5%;
+  }
+
+  @media (max-width: $mini-desktop-width) {
+    &:not(:last-child) {
+      margin-right: 0;
+    }
   }
 }

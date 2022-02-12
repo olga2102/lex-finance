@@ -1,7 +1,17 @@
+.footer {
+  padding: 30px 0;
+}
+
 .footer__wrapper {
   padding-bottom: 20px;
   display: flex;
   flex-wrap: wrap;
+
+  @media (max-width: $medium-desktop-width) {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 .footer__logo {
@@ -10,6 +20,10 @@
 
 .footer__nav {
   width: 80%;
+
+  @media (max-width: $mini-tablet-width) {
+    width: 100%;
+  }
 }
 
 .footer__link {
@@ -37,6 +51,22 @@
     width: 88.5%;
     height: 1px;
     background-color: $border-grey;
+
+    @media (max-width: $medium-desktop-width) {
+      width: 84%;
+    }
+
+    @media (max-width: $tablet-width) {
+      width: 73%;
+    }
+
+    @media (max-width: $mini-tablet-width) {
+      width: 58%;
+    }
+
+    @media (max-width: $mobile-width) {
+      width: 100%;
+    }
   }
 
   &::after {
@@ -48,5 +78,15 @@
     height: 312px;
     background-image: url("../img/hand.png");
     background-repeat: no-repeat;
+    background-size: contain;
+
+    @media (max-width: $medium-desktop-width) {
+      width: 270px;
+      height: 285px;
+    }
+
+    @media (max-width: $mobile-width) {
+      display: none;
+    }
   }
 }
