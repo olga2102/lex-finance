@@ -5,16 +5,17 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>ExpertPro</title>
-  <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" type="text/css"
     href="https://shariki-spb.ru/wp-content/themes/Goodini/assets/css/base.min.css" />
   <link rel="stylesheet" type="text/css"
     href="https://shariki-spb.ru/wp-content/themes/Goodini/assets/css/modules.css" />
   <link rel="stylesheet" type="text/css"
     href="https://shariki-spb.ru/wp-content/themes/Goodini/assets/css/blocks.css" />
+  <!-- <link rel="stylesheet" type="text/css" href="slick/slick.css" /> -->
+  <link rel="stylesheet" href="css/style.css">
   <link href="fonts/opensans.woff2" as="font" rel="preload" crossorigin="anonymous">
   <link href="fonts/playfairDisplay-Italic.woff2" as="font" rel="preload" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+  <!-- <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" /> -->
 </head>
 
 <body class="page__body">
@@ -211,7 +212,7 @@
               <p class="feedback__text">На сайте далеко не полный перечень наших возможностей. Оставьте заявку или
                 позвоните.</p>
               <a class="feedback__tel" href="tel:88462673000">+7 (846) 267-30-00</a>
-              <a class="feedback__link button">Перезвоните мне</a>
+              <a class="feedback__link button" href="#">Перезвоните мне</a>
               <p class="feedback__note">Если окажется, что ваш вопрос - не наша компетенция, порекомендуем, куда лучше
                 обратиться.</p>
             </div>
@@ -251,9 +252,9 @@
         <h2 class="portfolio__title">Портфолио</h2>
         <p class="portfolio__text">Оцените уровень компетенции нашей команды по сложности решенных для клиентов вопросов
         </p>
-        <div class="portfolio__swiper swiper">
-          <ul class="portfolio__list swiper-wrapper">
-            <li class="portfolio__item portfolio__item--spare swiper-slide">
+        <div class="portfolio__slider">
+          <ul class="portfolio__list slick-slider">
+            <li class="portfolio__item portfolio__item--spare slick-slide">
               <div class="portfolio__wrapper">
                 <div class="portfolio__inner">
                   <p class="portfolio__topic"><b>Избавили клиента от 160 млн ₽</b> доначисленных налогов</p>
@@ -261,7 +262,7 @@
                 </div>
               </div>
             </li>
-            <li class="portfolio__item portfolio__item--save swiper-slide">
+            <li class="portfolio__item portfolio__item--save slick-slide">
               <div class="portfolio__wrapper">
                 <div class="portfolio__inner">
                   <p class="portfolio__topic"><b>Сэкономили подрядчику 10 млн ₽</b>, урегулировав спор до суда</p>
@@ -269,7 +270,7 @@
                 </div>
               </div>
             </li>
-            <li class="portfolio__item portfolio__item--exact swiper-slide">
+            <li class="portfolio__item portfolio__item--exact slick-slide">
               <div class="portfolio__wrapper">
                 <div class="portfolio__inner">
                   <p class="portfolio__topic"><b>Взыскали с банка 10 млн ₽</b> гарантийного депозита</p>
@@ -277,7 +278,7 @@
                 </div>
               </div>
             </li>
-            <li class="portfolio__item portfolio__item--hide swiper-slide">
+            <li class="portfolio__item portfolio__item--hide slick-slide">
               <div class="portfolio__wrapper">
                 <div class="portfolio__inner">
                   <p class="portfolio__topic"><b>Один из 4-х собственников ТЦ</b> скрывал доходы от 3-х остальных</p>
@@ -298,25 +299,28 @@
       <h2 class="location__title">Работать с нами <span class="location__title--pink">удобно</span></h2>
       <p class="location__text">Офис расположен в исторической части города.</p>
       <div class="location__map">
-        <p class="location__notice">При записи на консультацию запрашиваем список документов для предварительного
-          изучения, чтобы первая встреча <b>прошла максимально продуктивно.</b></p>
+
         <iframe class="location__iframe"
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d20409941.621130794!2d58.403320700000016!3d51.358061199999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x41661e1f56f15a29%3A0xeb7cf418e52cc172!2z0YPQuy4g0JLQvtC00L3QuNC60L7QsiwgNjAsINCh0LDQvNCw0YDQsCwg0KHQsNC80LDRgNGB0LrQsNGPINC-0LHQuy4sIDQ0MzA5OQ!5e0!3m2!1sru!2sru!4v1644687012446!5m2!1sru!2sru"
           style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0" loading="lazy"></iframe>
+          <div class="location__wrapper">
+          <p class="location__notice">При записи на консультацию запрашиваем список документов для предварительного
+            изучения, чтобы первая встреча <b>прошла максимально продуктивно.</b></p>
         <form class="location__form form">
           <div class="form__wrapper">
             <p class="form__text">Запишитесь на первичную консультацию с юристом</p>
             <div class="form__inner">
-            <label class="form__label" for="name"></label>
-            <input class="form__input" id="name" type="text" name="name" placeholder="Как к Вам обращаться?">
-            <label class="form__label" for="tel"></label>
-            <input class="form__input" id="tel" type="tel" name="tel" placeholder="Ваш номер телефона">
-          </div>
+              <label class="form__label" for="name"></label>
+              <input class="form__input" id="name" type="text" name="name" placeholder="Как к Вам обращаться?">
+              <label class="form__label" for="tel"></label>
+              <input class="form__input" id="tel" type="tel" name="tel" placeholder="Ваш номер телефона">
+            </div>
             <button class="form__button" type="submit">Записаться на консультацию</button>
             <p class="form__notice">Отправляя заявку, вы даете согласие на <a class="form__link" href="#">обработку
                 персональных данных</a></p>
           </div>
         </form>
+      </div>
       </div>
     </section>
   </main>
@@ -420,9 +424,12 @@
     <a class="footer__link" href="#">Разработано в <span class="footer__link--orange">B2B</span>.<br><span
         class="footer__link--pink">All rights Reserved</span></a>
   </footer>
-  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
-  <script src="js/slider.js" type="module"></script>
-  <script src="js/menu.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="https://shariki-spb.ru/wp-content/themes/Goodini/assets/js/base.min.js"></script>
   <script src="https://shariki-spb.ru/wp-content/themes/Goodini/assets/js/validate.min.js"></script>
+  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+  <!-- <script src="js/slider.js" type="module"></script> -->
+  <!-- <script type="text/javascript" src="slick/slick.min.js"></script> -->
+  <script src="js/slick.js"></script>
+  <script src="js/menu.js"></script>
 </body>
