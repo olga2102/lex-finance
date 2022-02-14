@@ -1,5 +1,6 @@
 $(document).ready(function(){
   $('.slick-slider').slick({
-    setting-name: setting-value
+    slidesToShow: 4,
+		slidesToScroll: 1,
   });
 });

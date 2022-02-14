@@ -45,15 +45,16 @@
   }
 }
 
-.portfolio__slider {
-  width: 87%;
-}
+// .portfolio__slider {
+//   width: 87%;
+// }
 
 .portfolio__list {
   padding: 20px 0;
 }
 
 .portfolio__item {
+  padding-right: 30px;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -61,6 +62,8 @@
   min-height: 413px;
 
   &::before {
+    margin: 0 auto;
+    display: block;
     content: "";
     width: 255px;
     height: 180px;
